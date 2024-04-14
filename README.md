@@ -6,7 +6,7 @@ This is my collection of SuperH hardware!
 | Manufacturer | Model | CPU | RAM | FLASH | Networking | JTAG | Notes |
 | ------------ | ----- | --- | --- | ----- | ---------- | ---- | ----- |
 | Interface Magazine | June 2010 SH-2A |  | | | | Visible | 
-| Interface Magazine | SH-2 |  | | | | Visible | 
+| Interface Magazine | [June 2006 SH-2](interface/june2006/README.md) |  | | | | Visible | 
 
 # SH3
 | Manufacturer | Model | CPU | RAM | FLASH | Networking | JTAG | Notes |
