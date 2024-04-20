@@ -1,12 +1,17 @@
 # Snapgear SG530 / Secure Computing SME530
 
 ## Photos
+### PCB Top
 ![PCB Top](top1.jpg)
 ![PCB Top](top2.jpg)
 ![Ethernet ICs](ethernet.jpg)
 ![Flash & Reset IC](flash_reset.jpg)
 ![Close CPU](cpu_close.jpg)
-![Photo of E10A attached to SG530](e10a.jpg)
+### Attached to E10A-USB
+![E10A attached to SG530](e10a.jpg)
+### Custom RP2040 JTAG Probe
+![RP2040 Blinking LEDs on SG530 over JTAG](jtag_led_blink.webp)
+![RP2040 Controlling the SG530 over JTAG](rp2040_hudi.jpg)
 
 ## Peripherals Map
 | Area | Memory Address | Description |
