@@ -14,7 +14,7 @@ This is my collection of SuperH hardware!
 | Manufacturer | Model | CPU | RAM | FLASH | Networking | JTAG | Notes |
 | ------------ | ----- | --- | --- | ----- | ---------- | ---- | ----- |
 | Argox | [OS-214 Mainboard](argox/os-214/README.md) | SH7705V @ 100MHz | ? | | | |
-| Mitsubishi | Q06HCPU | SH7708S @ 60MHz | ? | ? | | |
+| Mitsubishi | [Q06HCPU](mitsubishi/q06hcpu/README.md) | SH7708S @ 60MHz | ? | ? | | |
 
 # SH4
 | Manufacturer | Model | CPU | RAM | FLASH | Networking | JTAG | Notes |
