@@ -1,0 +1,158 @@
+Linux version 2.4.22-uc0 (toby@toby1) (gcc version 3.0.4) #1 Fri Apr 16 08:57:57 EST 2004
+SnapGear RTC: using ds1302 rtc.
+On node 0 totalpages: 4096
+zone(0): 4096 pages.
+zone(1): 0 pages.
+zone(2): 0 pages.
+Kernel command line: mem=16M console=ttySC1,57600 
+Setup SnapGear IRQ/IPR ...
+CPU clock: 166.80MHz
+Bus clock: 83.40MHz
+Module clock: 41.70MHz
+SnapGear: 1000Hz fast timer on IRQ 17
+Calibrating delay loop... 165.88 BogoMIPS
+Memory: 14120k/16384k available (2264k reserved including: 1613k kernel code, 59k data, 168k BSS, 216k init, 176k page map)
+Dentry cache hash table entries: 2048 (order: 2, 16384 bytes)
+Inode cache hash table entries: 1024 (order: 1, 8192 bytes)
+Mount cache hash table entries: 512 (order: 0, 4096 bytes)
+Buffer cache hash table entries: 1024 (order: 0, 4096 bytes)
+Page-cache hash table entries: 4096 (order: 2, 16384 bytes)
+CPU: SH7751
+POSIX conformance testing by UNIFIX
+PCI: Using configuration type 1
+PCI: SH7751 PCI host bridge found.
+PCI: Mapping SnapGear IRQ for slot 8, pin A to irq -1
+PCI: Mapping SnapGear IRQ for slot 13, pin A to irq 5
+PCI: Mapping SnapGear IRQ for slot 14, pin A to irq 8
+Linux NET4.0 for Linux 2.4
+Based upon Swansea University Computer Society NET3.039
+Initializing RT netlink socket
+SnapGear: EraseConfig init
+SnapGear: registered EraseConfig switch on IRQ2
+Starting kswapd
+ledman: Copyright (C) SnapGear, 2000-2003.
+SuperH SCI(F) driver initialized
+ttySC0 at 0xffe00000 is a SCI
+ttySC1 at 0xffe80000 is a SCIF
+Real Time Clock Driver v1.10e
+SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256).
+CSLIP: code copyright 1989 Regents of the University of California.
+RAMDISK driver initialized: 16 RAM disks of 8192K size 1024 blocksize
+PPP generic driver version 2.4.2
+PPP MPPE compression module registered
+PPP Deflate Compression module registered
+PPP BSD Compression module registered
+8139too Fast Ethernet driver 0.9.26
+8139too: pci dev 00:0d.0 (id 10ec:8139 rev 20) is an enhanced 8139C+ chip
+8139too: Use the "8139cp" driver for improved performance and stability.
+eth0: RealTek RTL8139 Fast Ethernet at 0xbd000000, 00:d0:cf:03:5d:a2, IRQ 5
+8139too: pci dev 00:0e.0 (id 10ec:8139 rev 20) is an enhanced 8139C+ chip
+8139too: Use the "8139cp" driver for improved performance and stability.
+eth1: RealTek RTL8139 Fast Ethernet at 0xbd010000, 00:d0:cf:03:5d:a3, IRQ 8
+SnapGear flash probe(0x0,4194304,1): 400000 at 0
+cfi_cmdset_0001: Erase suspend on write enabled
+Using buffer write method
+Creating 4 MTD partitions on "Flash":
+0x00000000-0x00020000 : "Boot data"
+0x00020000-0x00060000 : "Config"
+0x00060000-0x00400000 : "Image"
+0x00000000-0x00400000 : "Flash"
+NET4: Linux TCP/IP 1.0 for NET4.0
+IP Protocols: ICMP, UDP, TCP, IGMP
+IP: routing cache hash table of 512 buckets, 4Kbytes
+TCP: Hash tables configured (established 1024 bind 2048)
+GRE over IPv4 tunneling driver
+klips_info:ipsec_init: KLIPS startup, FreeS/WAN IPSec version: 1.97
+klips_info:ipsec_alg_init: KLIPS alg v=0.7.3-1 (EALG_MAX=255, AALG_MAX=15)
+klips_info:ipsec_alg_init: calling ipsec_alg_static_init()
+ipsec_aes_init(alg_type=15 alg_id=12 name=aes): ret=0
+ip_conntrack version 2.1 (128 buckets, 1024 max) - 324 bytes per conntrack
+ip_tables: (C) 2000-2002 Netfilter core team
+ipt_time loading
+ipt_recent v0.3.1: Stephen Frost <sfrost@snowman.net>.  http://snowman.net/projects/ipt_recent/
+NET4: Unix domain sockets 1.0/SMP for Linux NET4.0.
+Ebtables v2.0 registered<6>NET4: Ethernet Bridge 008 for NET4.0
+Bridge firewalling registered
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+Other stuff added by David S. Miller <davem@redhat.com>
+VFS: Mounted root (cramfs filesystem) readonly.
+Freeing unused kernel memory: 216k freed
+Shell invoked to run file: /etc/rc
+Command: echo "/etc/rc processing ..."
+/etc/rc processing ...
+Command: hostname SME530
+Command: echo "Making Filesystems ..."
+Making Filesystems ...
+Command: # /dev/ram0 is the root filesystem for recovery images
+Command: /bin/expand /etc/ramfs.img /dev/ram1
+Command: /bin/expand /etc/ramfs.img /dev/ram2
+Command: echo "Mounting Filesystems ..."
+Mounting Filesystems ...
+Command: mount -t proc proc /proc
+Command: mount -t ext2 /dev/ram1 /var
+Command: mount -t ext2 /dev/ram2 /etc/config
+Command: mkdir /var/tmp
+Command: mkdir /var/log
+Command: mkdir /var/run
+Command: mkdir /var/lock
+Command: mkdir /var/empty
+Command: logd boot
+Command: echo "Processing Config Filesystem ..."
+Processing Config Filesystem ...
+Command: /bin/flatfsd -r
+flatfsd: Created 12 configuration files (2865 bytes)
+Command: cp /etc/config/resolv.user /etc/config/resolv.conf
+/etc/config/resolv.user: No such file or directory
+Command: echo "Setting system clock ..."
+Setting system clock ...
+Command: hwclock --hctosys --utc
+Command: /bin/migrate_config
+Command: echo "/etc/rc complete."
+/etc/rc complete.
+Execution Finished, Exiting
+ip_conntrack_pptp version $Revision: 1.8 $ loaded
+ip_nat_pptp version $Revision: 1.4 $ loaded
+May  9 20:24:25 firewall[15]: executing firewall rules
+Shell invoked to run file: /etc/config/start
+Command: ifconfig lo 127.0.0.1
+Command: route add -net 127.0.0.0 netmask 255.0.0.0 lo
+Command: dhcpcd -p -a -h - eth0 &
+eth0: Setting 100mbps full-duplex based on auto-negotiated partner ability c5e1.
+[36]
+Execution Finished, Exiting
+
+Sash command shell (version 1.1.1)
+/> Error -5 while decompressing!
+881ea03b(3131)->88e31000(4096)
+Fixing up unaligned userspace access in "boa" pid=46 pc=0x0040900c ins=0x013e
+Killing process "boa" due to unaligned access
+boa[46] killed because of sig - 11
+STACK DUMP:
+0x7bfffed4: 00402aa6 00000001 0041c0ec 2959b7c4 00000001 295dd8a8 7bffff2c
+0x7bfffef0: 7bffff24 00000000 ffffffff 2959b838 00000000 295dd8a8 00000000
+0x7bffff0c: 00000000 00000000 00000000 00000000 00401972 00000000
+
+PC  : 0040900c SP  : 7bfffed4 SR  : 00000001 TEA : 7bfffed4    Not tainted
+R0  : 0040e24b R1  : 00000000 R2  : 0043cf9d R3  : 0041d060
+R4  : 00000050 R5  : 004096b3 R6  : 00000000 R7  : 295dd8a8
+R8  : 00403320 R9  : 0041b0f8 R10 : 00000050 R11 : 000000b0
+R12 : 295dd8a8 R13 : 00000001 R14 : 00000000
+MACH: ffffff9b MACL: 00000060 GBR : ff800000 PR  : 004031cc
+00400000-0040b000 r-xp 00000000 1f:02 46604 /bin/boa
+0041a000-0041c000 rw-p 0000a000 1f:02 46604 /bin/boa
+0041c000-00425000 rwxp 00000000 1f:02 46604 
+29556000-2955b000 r-xp 00000000 1f:02 2295184 /lib/ld-uClibc-0.9.21.so
+2955b000-2955c000 rw-p 00000000 1f:02 2295184 
+2956a000-2956b000 rw-p 00004000 1f:02 2295184 /lib/ld-uClibc-0.9.21.so
+2956b000-2956e000 r-xp 00000000 1f:02 2306348 /lib/libcrypt-0.9.21.so
+2956e000-2957d000 ---p 00003000 1f:02 2306348 
+2957d000-2957e000 rw-p 00002000 1f:02 2306348 /lib/libcrypt-0.9.21.so
+2957e000-2958f000 rw-p 00000000 1f:02 2306348 
+2958f000-295ce000 r-xp 00000000 1f:02 2489716 /lib/libuClibc-0.9.21.so
+295ce000-295dd000 ---p 0003f000 1f:02 2489716 
+295dd000-295df000 rw-p 0003e000 1f:02 2489716 /lib/libuClibc-0.9.21.so
+295df000-295e1000 rw-p 00000000 1f:02 2489716 
+7bffe000-7c000000 rwxp fffff000 1f:02 2489716 
+Fixing up unaligned userspace access in "boa" pid=94 pc=0x0040900c ins=0x013e
+Killing process "boa" due to unaligned access
+boa[94] killed because of sig - 11

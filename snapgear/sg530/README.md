@@ -53,3 +53,19 @@ lifting pin 4 which disables the watchdog.
 
 ## LEDs
 LEDs are controlled by `U9` which is writable at 0x1000_0000 (Area 4 - CS4n).
+
+## Stock ucLinux Firmware
+### Login with telnet
+```
+User: root
+Password: default
+```
+
+### Default Boot Args
+```
+cat /proc/cmdline
+mem=16M console=null
+```
+
+### Change Boot Args
+`flash arg "mem=16M console=ttySC1,57600"`
