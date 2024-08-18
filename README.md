@@ -37,10 +37,10 @@ This is my collection of SuperH hardware!
 | Sega | System SP | SH7091 @ ~200MHz | 32MB SDRAM | | | Visible (Maybe Locked?) | |
 | Pioneer | [AVIC-ZH09CS Board 3](pioneer/avic_zh09cs/README.md) | R8A73706DBG | | | | | |
 | Pioneer | [AVIC-ZH09CS Board 4](pioneer/avic_zh09cs/README.md) | R8A77770 | | | | | |
-| Kyoto Micro Computer | KZ-SH4-01 | SH7750 @ 200MHz | 16MB SDRAM | | | | |
+| Kyoto Micro Computer | [KZ-SH4-01](kmc/kz-sh4-01/README.md) | SH7750 @ 200MHz | 16MB SDRAM | | | | |
 
 # JTAG Devices
 | Manufacturer | Model | Host Connection | Notes |
 | ------------ | ----- | --------------- | ----- |
 | Kyoto Micro Computer | [Partner-J](kmc/partner-j/README.md) | Parallel |  |
-| Hitachi | E10A-USB | USB |  |
+| Renesas | [E10A-USB](renesas/e10a-usb/README.md) | USB |  |
