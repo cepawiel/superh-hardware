@@ -24,36 +24,44 @@ NAE35/NAE45
 # Sega
 
 ## SH2
-Saturn
-Katana Dev Kit GDROM Emulator (2x SH7604)
+- Saturn
+- Katana Dev Kit GDROM Emulator (2x SH7604)
 
 ## SH4
-Dreamcast
-System SP
-NAOMI/NAOMI2
-Atomiswave
+- Dreamcast
+- System SP
+- NAOMI/NAOMI2
+- Atomiswave
 
 # Cave CV1000
-SH3 @ 133MHz
+- SH3 @ 133MHz
 
 # SnapGear/Secure Computing
 ## Routers
-SG530/SG550 - SH7751 @166MHz, 16MB RAM, 4/8MB Flash
-SG570/SG575 - SH7751R @240MHz, 16/64MB RAM, 8/16MB Flash
+- SG530/SG550 - SH7751 @166MHz, 16MB RAM, 4/8MB Flash
+- SG570/SG575 - SH7751R @240MHz, 16/64MB RAM, 8/16MB Flash
 ## PCI Cards
-SG630/SG635 - SH7751R @166/240MHz, 16MB Ram, 4/16MB Flash
+- SG630/SG635 - SH7751R @166/240MHz, 16MB Ram, 4/16MB Flash
 
 # Konami K2V
-Powers video gambling machines
+- Powers video gambling machines
 
 # Mitsubishi PLCs
-Q06HCPU
-Q12HCPU
-LSNAMO1 SH-4 + Dual Eth + CF + USB UART + Spartan6
+- Q06HCPU
+- Q12HCPU
+- LSNAMO1 SH-4 + Dual Eth + CF + USB UART + Spartan6
 
 # IIJ SEIL
-SEIL neu T1
-Maybe all neu?
+- SEIL neu T1
+  Maybe all neu?
+
+# Iodata
+- LANTANK
+
+## Plextor (Iodata Landisk)
+- PX-EH16L
+- PX-EH25L
+- PX-EH40L
 
 # SH Mobile
 ## SH7770 (SH-Navi 1)
