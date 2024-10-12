@@ -20,6 +20,9 @@ NAE35/NAE45
  - MS-NAE35xx-xxx
  - MS-NAE45xx-xxx
 
+# Panasonic
+- HVX200
+  (https://deadhacker.com/2009/07/26/targeting-the-panasonic-hvx200-hd-camera/)
 
 # Sega
 
