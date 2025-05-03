@@ -1,0 +1,12 @@
+# Sega System SP
+
+
+
+## CF Cards
+- KCF10P-512MS(A00AS)
+  - MDA-C0099
+  - 092a363783b9411e9a2da3e57c4568b7  mda-c0099.bin
+
+- KCF10P-512MS(A00AS)
+  - MDA-C0100
+  - 8ea69281d7f0b3c4b1eda6a00b803007  mda-c0100.bin
