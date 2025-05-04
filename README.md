@@ -24,6 +24,7 @@ This is my collection of SuperH hardware!
 | SnapGear/Secure Computing | [SG575](snapgear/sg575/README.md) | SH7751R @ 240MHz | 64MB SDRAM | 16MB | 3x RTL8139C+ | Visible Untested | |
 | SnapGear/Secure Computing | [SG630](snapgear/sg630/README.md) | SH7751R @ 240MHz | 64MB SDRAM | 16MB | 3x RTL8139C+ | Visible Untested | PCI VPN Card |
 | IO Data | [HDL-120U](iodata/hdl-120u/README.md) | SH7380 @ 267MHz | 64MB SDRAM | 512KB | Realtek RTL8139C+ | Not Visible |
+| IO Data | [HDLM-250U](iodata/hdlm-250u/README.md) | SH7380 @ 267MHz | 64MB SDRAM | 512KB | Realtek RTL8139C+ | Not Visible | 2x IDE Disks |
 | Konami | [KV2](konami/kv2/README.md) | SH7751R @ ? | ? | ? | ? | Visible Untested | GPU: SiS 315 |
 | Hitachi | [HPW-600ET](hpw-600et/README.md) | SH7750V @ 128MHz | 32MB SDRAM | ? | 1x Modem | Not Visible | Tablet w/ Touchscreen, WinCE  |
 | Johnson Controls | [MS-NCM4510-2](ms-ncm4510-2/README.md) | SH7760 @ ? | 128MB | 128MB | 1x LAN91C111-NS | Visible Untested | UART Controller |
