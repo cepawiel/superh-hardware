@@ -9,6 +9,7 @@ This is my collection of SuperH hardware!
 | Interface Magazine | [June 2006 SH-2](interface/june2006/README.md) |  | | | | Visible | 
 | Sega | Saturn | | | | No | No | 
 | Sega | ST-V | |  | | No | No | 
+| Denso | [N3H4](denso/n3h4/README.md) | SH7055 @ 40MHz |
 
 # SH3
 | Manufacturer | Model | CPU | RAM | FLASH | Networking | JTAG | Notes |
