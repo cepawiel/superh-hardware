@@ -45,3 +45,4 @@ This is my collection of SuperH hardware!
 | ------------ | ----- | --------------- | ----- |
 | Kyoto Micro Computer | [Partner-J](kmc/partner-j/README.md) | Parallel |  |
 | Renesas | [E10A-USB](renesas/e10a-usb/README.md) | USB |  |
+| Alpha Project | [HJ-Link/USB](alpha_project/hj-link-usb/README.md) | USB |  |
