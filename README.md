@@ -41,6 +41,7 @@ This is my collection of SuperH hardware!
 | Pioneer | [AVIC-ZH09CS Board 4](pioneer/avic_zh09cs/README.md) | R8A77770 | | | | | |
 | Kyoto Micro Computer | [KZ-SH4-01](kmc/kz-sh4-01/README.md) | SH7750 @ 200MHz | 16MB SDRAM | | | | |
 | Taito | [K11X1016A](taito/K11X1016A/README.md) | SH7730 @ 266MHz | 64MB SDRAM | | SMSC LAN9115-MT | Visable Untested |  |
+| Amino | [A140](amino/a140/README.md) | STi7105 @ 450 MHz | 256MB DDR2 | | | |  |
 
 # JTAG Devices
 | Manufacturer | Model | Host Connection | Notes |

@@ -1,0 +1,588 @@
+PBL (version BSSP_0.40_rc1)
+
+Amino PBL 2.7.0a1 built on Jul 28 2015 at 13:42:49
+Hardware: A140
+Board has 256 MiB RAM fitted
+Board has   4 MiB NOR fitted
+NAND BBT:
+    bad block at 01440000
+    bad block at 04EA0000
+TV system: NTSC-M 
+Output format: CVBS-LBR 
+Serial number: 'LC0717D0440234'
+Boot partition size: 14336 KiB (default)
+PART0_SIZE: 94MiB leaving 162MiB RAM for Linux
+Created PBL key from embedded key - length=305
+PBL_KEY matches embedded KEY
+CUSTOMER_KEY signed - length=184
+Trying to load the Main Image...
+MI size 0x0044d0c9
+MI is correctly signed with CUSTOMER_KEY
+Passing cmdline of "boardmem=262143K mem=162M mtdparts=stm-nand-afm.1:14336K(nand_linux),-(nand_fs)"
+
+Linux version 2.6.23.17_stm23_0125-amino (gsewell@build7) (gcc version 4.2.4 (snapshot) (STMicroelectronics/Linux Base 4.2.4-60)) #1 PREEMPT Wed Mar 30 14:13:13 BST 2016
+Booting machvec: ax4x
+Node 0: start_pfn = 0x40000, low = 0x4a200
+Zone PFN ranges:
+  Normal     262144 ->   303616
+Movable zone start PFN for each node
+early_node_map[1] active PFN ranges
+    0:   262144 ->   303616
+Amino Ax4x board initialisation
+STx7105 version 4.x
+Built 1 zonelists in Zone order.  Total pages: 41148
+Kernel command line: boardmem=262143K mem=162M mtdparts=stm-nand-afm.1:14336K(nand_linux),-(nand_fs) console=ttyAS0,115200 root=/dev/ram rw bigphysarea=500
+bpa2: partition 'bigphysarea' created at 0x40f53000, size 2000 kB (0x001f4000 B)
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Using tmu for system timer
+Using 25.000 MHz high precision timer.
+Console: colour dummy device 80x25
+console [ttyAS0] enabled
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 147968k/165888k available (2782k kernel code, 795k data, 2452k init)
+PVR=04909200 CVR=60880000 PRR=00009e40
+I-cache : n_ways=2 n_sets=512 way_incr=16384
+I-cache : entry_mask=0x00003fe0 alias_mask=0x00003000 n_aliases=4
+D-cache : n_ways=2 n_sets=512 way_incr=16384
+D-cache : entry_mask=0x00003fe0 alias_mask=0x00003000 n_aliases=4
+Mount-cache hash table entries: 512
+CPU: STx7105
+NET: Registered protocol family 16
+Amino board HWID=0x2 (A140)
+Memory layout:
+  System memory size = 0x10000000 (256 MiB)
+  Linux memory size = 0x0A200000 (162 MiB)
+  PART0 base = 0x4A200000, PART0 reserved = 0x00000400, PART0 size = 0x05DFFC00 (94 MiB)
+Generic PHY: Registered new driver
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+pms_init: pms initialization
+Time: SuperH clocksource has been installed.
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NTFS driver 2.1.28 [Flags: R/O].
+io scheduler noop registered
+io scheduler deadline registered (default)
+STMicroelectronics ASC driver initialized
+stasc.0: ttyAS0 at MMIO 0xfd032000 (irq = 121) is a stasc
+stasc.1: ttyAS1 at MMIO 0xfd033000 (irq = 120) is a stasc
+Micrel KSZ8041: Registered new driver
+rt73: init
+usbcore: registered new interface driver rt73
+scsi0 : sata_stm
+ata1: ata reset issued (scr_status=0)
+ata1: ** ata reset failed after 10 attempts **
+ata1: SATA max UDMA/133 cmd 0xfe209000 ctl 0xfe209820 bmdma 0x00000000 irq 72
+ata1: SATA link down (SStatus 0 SControl 300)
+NAND device: Manufacturer ID: 0xc2, Chip ID: 0xf1 (Unknown NAND 128MiB 3,3V 8-bit)
+2 cmdlinepart partitions found on MTD device stm-nand-afm.1
+Creating 2 MTD partitions on "stm-nand-afm.1":
+0x00000000-0x00e00000 : "nand_linux"
+0x00e00000-0x08000000 : "nand_fs"
+spi_stm_ssc: SSC SPI Driver
+m25p80 spi0.122: mx25l3255d (4096 Kbytes, erase 4 Kbytes)
+Creating 1 MTD partitions on "norflash":
+0x00000000-0x00400000 : "norflash"
+spi_stm_ssc: Registered SPI Bus 0: CLK[2,5] SDOUT[2, 6] SDIN[2, 7]
+stm-ehci stm-ehci.0: st-ehci
+stm-ehci stm-ehci.0: new USB bus registered, assigned bus number 1
+stm-ehci stm-ehci.0: irq 169, io mem 0xfe1ffe00
+stm-ehci stm-ehci.0: USB 0.0 started, EHCI 1.00, driver 10 Dec 2004
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+stm-ohci stm-ohci.0: stm-ohci
+stm-ohci stm-ohci.0: new USB bus registered, assigned bus number 2
+stm-ohci stm-ohci.0: irq 168, io mem 0xfe1ffc00
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+stm-ehci stm-ehci.1: st-ehci
+stm-ehci stm-ehci.1: new USB bus registered, assigned bus number 3
+stm-ehci stm-ehci.1: irq 143, io mem 0xfeaffe00
+stm-ehci stm-ehci.1: USB 0.0 started, EHCI 1.00, driver 10 Dec 2004
+usb usb3: configuration #1 chosen from 1 choice
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+stm-ohci stm-ohci.1: stm-ohci
+stm-ohci stm-ohci.1: new USB bus registered, assigned bus number 4
+stm-ohci stm-ohci.1: irq 142, io mem 0xfeaffc00
+usb usb4: configuration #1 chosen from 1 choice
+hub 4-0:1.0: USB hub found
+hub 4-0:1.0: 1 port detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+mice: PS/2 mouse device common for all mice
+i2c /dev entries driver
+i2c: STM SSC based I2C Driver
+usbcore: registered new interface driver usbhid
+drivers/hid/usbhid/hid-core.c: v2.6:USB HID core driver
+STMicroelectronics - Coprocessors st231 Init
+st-coprocessor-0: No RAM reserved
+st231.0 Coprocessor -------------------------------------------
+    not configured!
+---------------------------------------------------------------
+st-coprocessor-1: No RAM reserved
+st231.1 Coprocessor -------------------------------------------
+    not configured!
+---------------------------------------------------------------
+stm_rng hardware driver 1.0 configured
+stlpc_init: 
+stlpc_probe: 
+stlpc_probe: Looking for clk: CLKB_LPC
+stlpc_probe: Using clock CLKB_LPC @ 46875 Hz
+stlpc device driver registered
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3072 buckets, 12288 max)
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 17
+Bridge firewalling registered
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+ieee80211: 802.11 data/management/control stack, git-1.1.13
+ieee80211: Copyright (C) 2004-2005 Intel Corporation <jketreno@linux.intel.com>
+sh4 suspend support registered
+Freeing unused kernel memorytyaffs: dev is 32505857 name is "mtdblock1" rw
+yaffs: passed flags ""
+###############################################################################
+# Build target: aminetx4x-opera11
+# Software version: 3.3.2a20-Ax4x-opera11
+# Git tag desc: aminetx4x-3.3.2a20-0-g9039d31cb945897638b8ff6aa33c462c9d3e0269*
+###############################################################################
+Setting the initial system time to Jan 1 2000
+Loading flash_config
+KW:flashconfig_init: Initialisation successful
+Verify location of passwd and shadow
+passwd and shadow in nv - copying /mnt/nv/passwd & shadow to /etc
+Starting syslogd with -n -S -C64
+Starting configd
+Jan  1 00:00:06.882    I syslogd started: BusyBox v1.20.2
+Jan  1 00:00:06.951544 I daemoniser[372]: Spawning '/bin/configd'
+Jan  1 00:00:06.954647 E configd[373]: get_hostname: open failed (filename=/mnt/nv/hostname)
+rc.configd: Restarting syslogd
+Starting syslogd with -n -S -C64
+Starting klogd with -n -c 3 -l 7 -q; redirecting kernel messages to syslog
+Jan  1 00:00:07.520    I syslogd started: BusyBox v1.20.2
+Jan  1 00:00:07.529447 I daemoniser[439]: Spawning '/sbin/klogd'
+Jan  1 00:00:07.533    N kernel: klogd started: BusyBox v1.20.2 (2016-03-30 14:13:43 BST)
+Starting Ethernet interface
+Initialising eth module> insmod stmmac.ko dev_addr=00:02:02:65:95:1e
+Jan  1 00:00:07.660864 W K insmod[459]:         platform registration... <7>done!
+Jan  1 00:00:07.660923 I K insmod[459]:         GMAC - user ID: 0x10, Synopsys ID: 0x33
+Jan  1 00:00:07.662631 I K insmod[459]:         eth0 - (dev. name: stmmaceth - id: 0, IRQ #134
+Jan  1 00:00:07.662651 W K insmod[459]:         IO base addr: 0xfd110000)
+Jan  1 00:00:07.666074 I K insmod[459]: STMMAC MII Bus: probed
+Jan  1 00:00:07.666135 I K insmod[459]: eth0: PHY ID 00221513 at 0 IRQ -1 (0:00) active
+Jan  1 00:00:07.672129 I K ifconfig[465]: stmmac_timer: TMU2 Timer ON (freq 100Hz)
+Set MAC address for eth0 to 00:02:02:65:95:1e
+Starting Network
+Jan  1 00:00:07.733711 I daemoniser[474]: Spawning '/bin/netmand'
+Jan  1 00:00:07.735846 I netmand[475]: kill_old_services: stopping any old networking processes
+Loading gpio driver
+Jan  1 00:00:07.812847 I K insmod[487]: init_gpio_device: device registered
+Loading front panel driver
+Jan  1 00:00:07.827228 W K insmod[492]: fpanel: no version for "led_flash" found: kernel tainted.
+Jan  1 00:00:07.845070 I K insmod[492]: input: Amino Front Panel as /devices/virtual/input/input0
+Jan  1 00:00:07.853371 I K insmod[492]: FP input: Amino Front Panel
+Loading /mnt/nv/disp_ctl.ko
+Starting Amino logger driver
+Jan  1 00:00:07.887364 W K insmod[503]: amilog_drv: module license 'Proprietary' taints kernel.
+Jan  1 00:00:07.897294 I K insmod[503]: [ 946684807.897271] (insmod:503) amilog_init: opened device 'amilogger' on major node 252
+configmem: TVSYSTEM='NTSC' GFX_RESOLUTION='' GFX_MEM_SIZE='0' GFX_ROTATION=''
+configmem: Total GFX memory=25 MiB; heap=22 MiB, FB=3 MiB
+Jan  1 00:00:08.227773 I netmand[475]: manager_find_devices: found net device (0) 'lo' type 0
+Jan  1 00:00:08.227942 I netmand[475]: manager_find_devices: found net device (1) 'eth0' type 1
+Jan  1 00:00:08.228042 I netmand[475]: Network Manager: started
+Loading companions
+Jan  1 00:00:08.483614 I K S12rc.ststb_os_[515]: LXLOAD(video1) : LX loaded => Base=0x40000000 - Last=0x40125414 - Size=1201172
+Jan  1 00:00:08.994706 I K S12rc.ststb_os_[515]: LXLOAD(audio1) : LX loaded => Base=0x40400000 - Last=0x4055f134 - Size=1438004
+Loading Multicom
+Loading os_core modules
+[ 946684809.199978] K insmod[595]: Load module stevt_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.199978 ! K insmod[595]: Load module stevt_core [?]              by insmod (pid 595)
+[ 946684809.200674] K insmod[595]: Load module stcommon_core [?]                by insmod (pid 595)
+Jan  1 00:00:09.200674 ! K insmod[595]: Load module stcommon_core [?]           by insmod (pid 595)
+[ 946684809.201248] K insmod[595]: Load module sttbx_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.201248 ! K insmod[595]: Load module sttbx_core [?]              by insmod (pid 595)
+[ 946684809.201781] K insmod[595]: Load module stclock_core [251]               by insmod (pid 595)
+Jan  1 00:00:09.201781 ! K insmod[595]: Load module stclock_core [251]          by insmod (pid 595)
+[ 946684809.203080] K insmod[595]: Load module stclkrv_core [?]         by insmod (pid 595)
+Jan  1 00:00:09.203080 ! K insmod[595]: Load module stclkrv_core [?]            by insmod (pid 595)
+[ 946684809.203648] K insmod[595]: Load module stpower_core [250]               by insmod (pid 595)
+Jan  1 00:00:09.203648 ! K insmod[595]: Load module stpower_core [250]          by insmod (pid 595)
+[ 946684809.204203] K insmod[595]: Load module stfdma_core [249]                by insmod (pid 595)
+Jan  1 00:00:09.204203 ! K insmod[595]: Load module stfdma_core [249]           by insmod (pid 595)
+[ 946684809.206651] K insmod[595]: Load module stmerge_core [?]         by insmod (pid 595)
+Jan  1 00:00:09.206651 ! K insmod[595]: Load module stmerge_core [?]            by insmod (pid 595)
+[ 946684809.207226] K insmod[595]: Load module stavmem_core [?]         by insmod (pid 595)
+Jan  1 00:00:09.207226 ! K insmod[595]: Load module stavmem_core [?]            by insmod (pid 595)
+[ 946684809.208166] K insmod[595]: Load module stpio_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.208166 ! K insmod[595]: Load module stpio_core [?]              by insmod (pid 595)
+[ 946684809.208765] K insmod[595]: Load module stdenc_core [?]          by insmod (pid 595)
+Jan  1 00:00:09.208765 ! K insmod[595]: Load module stdenc_core [?]             by insmod (pid 595)
+[ 946684809.209214] K insmod[595]: Load module stlayer_core [?]         by insmod (pid 595)
+Jan  1 00:00:09.209214 ! K insmod[595]: Load module stlayer_core [?]            by insmod (pid 595)
+[ 946684809.209702] K insmod[595]: Load module stvout_core [?]          by insmod (pid 595)
+Jan  1 00:00:09.209702 ! K insmod[595]: Load module stvout_core [?]             by insmod (pid 595)
+[ 946684809.210152] K insmod[595]: Load module stvtg_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.210152 ! K insmod[595]: Load module stvtg_core [?]              by insmod (pid 595)
+[ 946684809.210650] K insmod[595]: Load module stvid_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.210650 ! K insmod[595]: Load module stvid_core [?]              by insmod (pid 595)
+[ 946684809.211132] K insmod[595]: Load module stos_core [?]            by insmod (pid 595)
+Jan  1 00:00:09.211132 ! K insmod[595]: Load module stos_core [?]               by insmod (pid 595)
+[ 946684809.211634] K insmod[595]: Load module stvmix_core [?]          by insmod (pid 595)
+Jan  1 00:00:09.211634 ! K insmod[595]: Load module stvmix_core [?]             by insmod (pid 595)
+[ 946684809.212096] K insmod[595]: Load module stgxobj_core [?]         by insmod (pid 595)
+Jan  1 00:00:09.212096 ! K insmod[595]: Load module stgxobj_core [?]            by insmod (pid 595)
+[ 946684809.212622] K insmod[595]: Load module staudlx_core [248]               by insmod (pid 595)
+Jan  1 00:00:09.212622 ! K insmod[595]: Load module staudlx_core [248]          by insmod (pid 595)
+[ 946684809.213174] K insmod[595]: Load module stcc_core [?]            by insmod (pid 595)
+Jan  1 00:00:09.213174 ! K insmod[595]: Load module stcc_core [?]               by insmod (pid 595)
+[ 946684809.213685] K insmod[595]: Load module stttx_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.213685 ! K insmod[595]: Load module stttx_core [?]              by insmod (pid 595)
+[ 946684809.214244] K insmod[595]: Load module stvbi_core [?]           by insmod (pid 595)
+Jan  1 00:00:09.214244 ! K insmod[595]: Load module stvbi_core [?]              by insmod (pid 595)
+[ 946684809.214775] K insmod[595]: Load module stblit_core [?]          by insmod (pid 595)
+Jan  1 00:00:09.214775 ! K insmod[595]: Load module stblit_core [?]             by insmod (pid 595)
+[ 946684809.215260] K insmod[595]: Load module sthdmi_core [?]          by insmod (pid 595)
+Jan  1 00:00:09.215260 ! K insmod[595]: Load module sthdmi_core [?]             by insmod (pid 595)
+Jan  1 00:00:09.215790 I K insmod[595]: Module stapler_core (rev: STAPLER-REL_1.7.0)[ 946684809.216259] K insmod[595]: Load module sttkdma_core by insmod (pid 595)
+[ 946684809.223713] K insmod[595]: Load module stpti4_core [?]          by insmod (pid 595)
+Loading flash_config crypto engine
+ loaded by insmod (pid 595)
+Jan  1 00:00:09.216259 ! K insmod[595]: Load module sttkdma_core by insmod (pid 595)
+Jan  1 00:00:09.223713 ! K insmod[595]: Load module stpti4_core [?]             by insmod (pid 595)
+Jan  1 00:00:09.444995 I K insmod[623]: Initialising av_core
+Jan  1 00:00:09.445555 I K insmod[623]:   Colour format=NTSC, lines=525, pedestal=1, PAL-N=0
+Jan  1 00:00:09.446067 I K insmod[623]:   Output format=Composite+YPbPr, aspect ratio=4:3 (pan & scan)
+Jan  1 00:00:09.446524 I K insmod[623]:   HD mode=AUTO, HDMI video format=RGB
+Jan  1 00:00:09.447011 I K insmod[623]:   Auto resolution selection enabled, analogue outputs enabled
+Jan  1 00:00:09.447458 I K insmod[623]:   Debug level=2, trust CC=0
+Jan  1 00:00:09.505882 W K insmod[623]: Discontinuity state: V -> startup
+Jan  1 00:00:09.506431 W K insmod[623]: Discontinuity state: A -> startup
+Jan  1 00:00:09.506927 W K insmod[623]: Discontinuity state: S -> startup
+Jan  1 00:00:09.695573 W K insmod[623]: init_all_decoders: STVID_Init(VID.MP2.0/MPEG-2) OK
+Jan  1 00:00:09.707786 W K insmod[623]: init_all_decoders: STVID_Init(VID.H264.0/H.264) OK
+Jan  1 00:00:09.721045 W K insmod[623]: init_all_decoders: STVID_Init(VID.MP42.0/MPEG4-2) OK
+Jan  1 00:00:10.793678 W K Video format[656]: format_changer_task: New video format
+Jan  1 00:00:10.793700 W K Video format[656]:   HD format - 720p59->HDNONE
+Jan  1 00:00:10.793712 W K Video format[656]:   Analogue outputs - Unknown->Composite+YPbPr
+Jan  1 00:00:10.793727 W K Video format[656]:   Lines - 525->525; colour - NTSC->NTSC; pedestal - 1->1; pal_n - 0->0
+Jan  1 00:00:10.797471 I K Video format[656]: display_control:display_control_set_outfmt: outfmt=6, is_lc=0, is_rgb=0, is_lbr=1
+Jan  1 00:00:10.798926 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:10.806762 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+vid_ttx not found - device node not created
+PAL-I
+PAL-B
+PAL-G
+PAL-H
+PAL-M
+PAL-N
+PAL-CN
+NTSC-M
+Jan  1 00:00:10.981048 I rfset[696]: channel_to_freq_mhz: Channel 3 is in selected frequency table, retuning to 61.25 Mhz
+Jan  1 00:00:10.982289 I rfset[696]: channel=3, lop=1, frequency=61.25 (61.25+0.00 fine tune), iic=0x98001EA3
+Starting frame buffers
+SETTINGS_GFX_RESOLUTION is 
+SETTINGS_GFX_ROTATION is 
+SETTINGS_GFX_MEM_SIZE is 0
+NORFLASH_TVSYSTEM is NTSC-M
+NORFLASH_OUTFMT is CVBS-LBR
+LINES is 525
+Main frame buffer - resolution=720x480-59i, format=ARGB8888, memory=25 MiB
+Jan  1 00:00:11.116741 I K insmod[717]: disp:LAYER_GDPInit() on layer device = 1 - Name = LAYER_GFX 
+Jan  1 00:00:12.025093 I K insmod[717]: stgfb_core_set_layers: gfx_height=480 gfx_width=720 VTGModeParams.ActiveAreaHeight=480
+Jan  1 00:00:12.025716 W K insmod[717]: VID_SetGFXScale gfx_height=480, gfx_width=720
+Jan  1 00:00:12.026723 I K insmod[717]: STGFB_setFB: Framebuffer 0 registered.
+Jan  1 00:00:12.101232 E K insmod[726]: fusion: unable to register major 250. Registered 237 instead
+Starting IR driver with options: 
+Jan  1 00:00:12.247908 N K insmod[763]: IR driver. Built Mar 30 2016
+Jan  1 00:00:12.248498 W K insmod[763]: init_ir_receiver: Initialising ST_ir_front
+Jan  1 00:00:12.249112 W K insmod[763]: fill_st_blast_params: clock speed 5f5e100
+Jan  1 00:00:12.251111 I K insmod[763]: input: Amino IR keyboard as /devices/virtual/input/input1
+Jan  1 00:00:12.258624 I K insmod[763]: input: Amino IR mouse as /devices/virtual/input/input2
+Jan  1 00:00:12.265044 I K insmod[763]: input: Amino IR mouse
+Jan  1 00:00:12.266156 I K insmod[763]: input: Amino IR remote as /devices/virtual/input/input3
+Jan  1 00:00:12.270087 I K insmod[763]: input: Amino IR remote
+Jan  1 00:00:12.270116 W K insmod[763]: ir_driver
+loading keymap from /etc/bkeymap-us
+Loading powermgmt module
+Jan  1 00:00:12.336482 N K insmod[787]: POWERMGMT driver. Built Mar 30 2016
+Jan  1 00:00:12.336610 I K insmod[787]: 
+Jan  1 00:00:12.336620 W K insmod[787]: Device Power Profile 0 - Registering 18 devices
+Jan  1 00:00:12.336673 I K insmod[787]: 
+Jan  1 00:00:12.336682 W K insmod[787]: Device Power Profile 1 - Registering 15 devices
+Jan  1 00:00:12.336773 W K insmod[787]: Error 1 calling STPOWER_SetWakeUpDevices for device 128 (0x80)
+Jan  1 00:00:12.336799 I K insmod[787]: POWER_init: Initialized power management dev OK! Major 235
+TVI not supported in this build
+IRblasting kernel module not supported in this build
+Jan  1 00:00:12.407542 W K insmod[800]: Symbol usb_register_driver is being used by a non-GPL module, which will not be allowed in the future
+Jan  1 00:00:12.408227 W K insmod[800]: Please see the file Documentation/feature-removal-schedule.txt in the kernel source tree for more details.
+Jan  1 00:00:12.408871 W K insmod[800]: Symbol usb_deregister is being used by a non-GPL module, which will not be allowed in the future
+Jan  1 00:00:12.409390 W K insmod[800]: Please see the file Documentation/feature-removal-schedule.txt in the kernel source tree for more details.
+Jan  1 00:00:12.412244 I K insmod[800]: usbcore: registered new interface driver usbtira
+Jan  1 00:00:12.412854 W K insmod[800]: USB HID Tira IR driver Version 1.10
+Checking for management pages tarball
+Untaring management pages
+Untarring management pages
+Starting Disk Management Daemon
+Jan  1 00:00:12.641019 I daemoniser[830]: Spawning '/usr/sbin/diskmand'
+Jan  1 00:00:12.643192 I diskmand[831]: Disk Manager: USB high power mode
+Jan  1 00:00:12.644587 I diskmand[831]: Disk Manager: started
+This STB does not have a HD temp control, not starting temp daemon
+/etc/hotplug/block.rc: cd: line 116: can't cd to /sys/block/sd*
+bogus sysfs DEVPATH=/block/sd*
+/mnt/nv/rc.hotplug: line 55: /etc/hotplug/input.rc: Permission denied
+touch: /var/lock/subsys/hotplug: No such file or directory
+Jan  1 00:00:12.796    I init: starting pid 852, tty '': '/etc/init.d/rc 5'
+
+Starting dropbear
+[862] Jan 01 00:00:12 Failed loading /mnt/nv/dbhost.dsa
+[862] Jan 01 00:00:12 Failed loading /etc/dropbear/dropbear_rsa_host_key
+[862] Jan 01 00:00:12 Failed loading /etc/dropbear/dropbear_dss_host_key
+[862] Jan 01 00:00:12 Failed loading /etc/dropbear/dropbear_ecdsa_host_key
+[867] Jan 01 00:00:12 Running in background
+Starting IRblaster Daemon
+This STB does not have any hard drive, not enabling Power Up In Standby feature
+This STB does not have any hard drive, not enabling S.M.A.R.T.
+Loading stdmx module... Jan  1 00:00:12.963549 N K insmod[879]: II STDMX [module26.c:125]: Loading ST demux driver
+Jan  1 00:00:12.964261 N K insmod[879]: II STDMX [module26.c:173]: ST demux driver successfully loaded
+OK
+
+Starting Video Streamer
+Loading streamer kernel module
+STREAMERD: version: 3.3.2a20-Ax4x-opera11, built on 30 Mar 2016 14:20
+Jan  1 00:00:13.183409 W streamerd[906]: streamerd PCR rate delivery version
+Jan  1 00:00:13.186232 W streamerd[906]: main: *** asset_storage_dir '/PVR' asset_dir '/PVR' **
+Jan  1 00:00:13.191982 W streamerd[909]: spawn_daemon: daemon starting
+Jan  1 00:00:13.193930 W streamerd[909]: check_hdd_mode: Starting in suspended mode Send resume command before recording or playing back
+Jan  1 00:00:13.201372 I streamerd[909]: plugin_register: udp successfully registered for udp:(any server)
+Jan  1 00:00:13.203248 I streamerd[909]: plugin_register: rtsp successfully registered for rtsp:(any server)
+Jan  1 00:00:13.203835 I streamerd[909]: plugin_register: rtsp successfully registered for pvr:(any server)
+Jan  1 00:00:13.205226 I streamerd[909]: plugin_register: mp3 successfully registered for mp3:(any server)
+Jan  1 00:00:13.206706 I streamerd[909]: plugin_register: igmp successfully registered for igmp:(any server)
+Jan  1 00:00:13.208200 I streamerd[909]: plugin_register: http successfully registered for tshttp:(any server)
+Jan  1 00:00:13.210367 I streamerd[909]: plugin_register: hls successfully registered for http:hls
+Jan  1 00:00:13.210974 I streamerd[909]: plugin_register: hls successfully registered for https:hls
+Jan  1 00:00:13.211426 I streamerd[909]: plugin_register: hls successfully registered for file:hls
+Jan  1 00:00:13.237926 I streamerd[909]: plugin_register: file successfully registered for tsfile:(any server)
+Jan  1 00:00:13.239472 I streamerd[909]: plugin_register: ffmpeg successfully registered for http:(any server)
+Jan  1 00:00:13.240078 I streamerd[909]: plugin_register: ffmpeg successfully registered for file:(any server)
+Jan  1 00:00:13.240621 I streamerd[909]: plugin_add_config_callback_item: increased size of config item list
+Jan  1 00:00:13.242320 W streamerd[909]: Max number of concurrent local  PVR  record   sessions is 3
+Jan  1 00:00:13.242926 W streamerd[909]: Max number of concurrent local  PVR  playback sessions is 1
+Jan  1 00:00:13.243350 W streamerd[909]: Max number of concurrent remote RTSP playback sessions is 4
+Jan  1 00:00:13.243827 W streamerd[909]: Max number of concurrent playback and record sessions is  5
+Jan  1 00:00:13.247063 W streamerd[909]: signal_daemon_running: daemoniser (pid:908) can quit now
+Loading AV router module
+Starting mediad
+Jan  1 00:00:13.341440 I daemoniser[922]: Spawning '/mnt/nv/mediad'
+Jan  1 00:00:13.449029 I mediad[923]: mpeg_vqe_init: VQE lib has not been found errno:0=Success dlerror=libvqe.so: cannot open shared object file: No such file or directory
+Jan  1 00:00:13.451709 W mediad[923]: get_HAL_Init_config_values: Failed to read SETTINGS.STEREOSCOPIC_PASSTHROUGH; default to AUTO
+Jan  1 00:00:13.452458 W mediad[923]: get_HAL_Init_config_values: Failed to read SETTINGS.HDMI_VIDEO_FORMAT; default to RGB
+Jan  1 00:00:13.454170 W mediad[923]: get_HAL_Init_config_values: Failed to read SETTINGS.CC_PREFERENCE; default to 'ATSC'
+Jan  1 00:00:13.455002 W mediad[923]: get_HAL_Init_config_values: Failed to read SETTINGS.GFX_RESOLUTION; default to SD
+Jan  1 00:00:13.456192 E mediad[923]: get_hdmi_fallback_mode: Failed to get HDMI_FALLBACK_MODE
+Jan  1 00:00:13.456867 I mediad[923]: TV system=NTSC-M(NTSC-M), output format=CVBS-LBR, analogue outputs enabled
+Jan  1 00:00:13.457363 I mediad[923]: HD mode=auto, graphics size=720x480, rotation=0
+Jan  1 00:00:13.457823 I mediad[923]: Native passthrough mode=None
+Jan  1 00:00:13.458266 I mediad[923]: Stereoscopic passthrough=auto, HDMI audio format=PCM, HDMI video format=RGB
+Jan  1 00:00:13.458695 I mediad[923]: Aspect ratio mode=4:3 (pan & scan), CC preference=ATSC, CC before PAC not allowed
+Jan  1 00:00:13.459213 I mediad[923]: Max PCR-PTS buffering=0, STC offset=0
+Jan  1 00:00:13.461864 I mediad[923]: rfmod_init: mode = 7, channel = 3, frequency table = 0
+Jan  1 00:00:13.462566 I mediad[923]: channel_to_freq_mhz: Channel 3 is in selected frequency table, retuning to 61.25 Mhz
+Jan  1 00:00:13.464367 I mediad[923]: channel=3, lop=1, frequency=61.25 (61.25+0.00 fine tune), iic=0x98001EA3
+Jan  1 00:00:13.467345 I mediad[923]: init_macrovision: Macrovision supported
+Jan  1 00:00:13.467967 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.468524 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.469108 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.469677 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.470266 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.470861 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.473686 I mediad[923]: Starting DirectFB master
+Jan  1 00:00:13.480897 I K Video format[656]: display_control:display_control_set_outfmt: outfmt=6, is_lc=0, is_rgb=0, is_lbr=1
+Jan  1 00:00:13.481181 I K Video format[656]: display_control:display_control_set_aspect: aspect=3
+Jan  1 00:00:13.488862 I daemoniser[932]: Spawning '/bin/dfb_master'
+Jan  1 00:00:13.638515 I dfb_master[934]: dfb_master: Running
+Jan  1 00:00:13.694286 I mediad[923]: DirectFB master started
+Jan  1 00:00:13.744872 I mediad[923]: video_window_init: initialised 1 window
+Jan  1 00:00:13.750332 I mediad[923]: libtsi_init: libtsi initialised successfully
+Jan  1 00:00:13.751105 N K stdmx0[953]: II STDMX [filter.c:305]: listen_task[set=86dd09e0] started
+Jan  1 00:00:13.770206 I mediad[923]: plugin_register: udp successfully registered for udp:(any server)
+Jan  1 00:00:13.772229 I mediad[923]: plugin_register: rtsp successfully registered for rtsp:(any server)
+Jan  1 00:00:13.772852 I mediad[923]: plugin_register: rtsp successfully registered for pvr:(any server)
+Jan  1 00:00:13.774468 I mediad[923]: plugin_register: mp3 successfully registered for mp3:(any server)
+Jan  1 00:00:13.776125 I mediad[923]: plugin_register: igmp successfully registered for igmp:(any server)
+Jan  1 00:00:13.777690 I mediad[923]: plugin_register: http successfully registered for tshttp:(any server)
+Jan  1 00:00:13.805022 I mediad[923]: plugin_register: hls successfully registered for http:hls
+Jan  1 00:00:13.805610 I mediad[923]: plugin_register: hls successfully registered for https:hls
+Jan  1 00:00:13.806120 I mediad[923]: plugin_register: hls successfully registered for file:hls
+Jan  1 00:00:13.851    N root: Created /mnt/ocfs directory
+Jan  1 00:00:13.872373 I mediad[923]: plugin_register: file successfully registered for tsfile:(any server)
+Jan  1 00:00:13.877706 I mediad[923]: plugin_register: ffmpeg successfully registered for http:(any server)
+Jan  1 00:00:13.878341 I mediad[923]: plugin_register: ffmpeg successfully registered for file:(any server)
+Jan  1 00:00:13.878967 I mediad[923]: plugin_add_config_callback_item: increased size of config item list
+Jan  1 00:00:13.882208 I mediad[923]: subs_cc_commit: Setting system: DvbttxSoftcc ( vbi: 1, soft: 0 )
+Jan  1 00:00:13.883994 I mediad[923]: pvr_read_config_values: PLT spooltime 60, PVR spooltime 1440
+Jan  1 00:00:13.892605 I mediad[923]: update_storage_device_status: No storage device detected
+Jan  1 00:00:13.901    N root: Created /mnt/ocfs/sbtemp directory
+Jan  1 00:00:13.907    N root: Registering IP to CM server
+Info: Using Servername: 198.6.14.157 
+Jan  1 00:00:13.940    N root: Launching Amino Daemon
+Jan  1 00:00:13.964    E aminodae: Amino Generic: create socket success
+Jan  1 00:00:13.968    E aminodae: Amino Generic: bind socket success
+Jan  1 00:00:13.969    E aminodae: Amino Generic: create socket success
+Jan  1 00:00:13.970    E aminodae: Amino Generic: bind socket success
+Jan  1 00:00:13.976967 I mediad[923]: stream_pvr_scheduler_load: loaded
+Jan  1 00:00:13.977    N root: Launching Activia Daemon
+Jan  1 00:00:13.987700 W mediad[923]: storage_internal_load: unable to load data
+Jan  1 00:00:13.988424 W mediad[923]: load: falling back to backup event storage
+Jan  1 00:00:13.989175 W mediad[923]: storage_internal_load: unable to load data
+Jan  1 00:00:13.990161 W mediad[923]: storage_internal_load: unable to load data
+Jan  1 00:00:13.990700 W mediad[923]: load: falling back to backup event storage
+Jan  1 00:00:13.991373 W mediad[923]: storage_internal_load: unable to load data
+ConfigFile Add Key[module_amino] Value[on]
+ConfigFile size [10]
+Jan  1 00:00:14.003    N root: Launching OmniCast Daemon
+Jan  1 00:00:14.005733 I mediad[923]: stream_pvr_schedule_init: Scheduler library initialised successfully
+Jan  1 00:00:14.006980 I mediad[923]: stream_pvr_init: Initialised PVR scheduler
+Jan  1 00:00:14.010900 I mediad[923]: subs_cc_resolution_changed: resolution changed to SD, updating captioning settings
+Jan  1 00:00:14.011405 I mediad[923]: subs_cc_compute_mode: Soft captioning disabled - enabling VBI
+Jan  1 00:00:14.019952 E mediad[923]: init_tvi: Unable to initialise TVI
+StarBurst Software OmniCast Basic Receiver...
+Current Working Directory /mnt/nv
+before sb_init
+Jan  1 00:00:14.025312 I mediad[923]: cec_init: TVI initialisation failed
+
+
+StarBurst OmniCast Basic Receiver Version:  V3.07.08
+StarBurst MFTP Library Version: V1.11.00
+
+Copyright 1999 StarBurst Software
+              All Rights Reserved
+
+for mpoint
+before app_check_receive
+In app_check_receive
+status of config_read = 0
+before opening mpoint 2 recvaddr
+
+Starting amimongoose
+Jan  1 00:00:14.065165 I daemoniser[977]: Spawning '/mnt/nv/amimongoose'
+status of opening mpoint 2 = 0
+sb_open success = 
+In rw_c.c before debug_file= 
+In app_check_receive SUCCESS
+after app_check_receive status = 0
+OmniCast Basic Receiver waiting for transfer...
+ENABLE_SUBS_OR_CC not set, TVSYSTEM is NTSC; Loading Software Closed Caption Decoder
+Starting Bitrouter Closed Captioning (cctextd)
+Jan  1 00:00:14.260026 I daemoniser[1005]: Spawning '/mnt/nv/cctextd'
+Jan  1 00:00:14.274999 I cctextd[1006]: cctextd: closed caption scaling in video window enabled
+Jan  1 00:00:14.277159 I mediad[923]: mediad_ipc_process_fds: event client connected
+Jan  1 00:00:14.278055 I mediad[923]: mediad_ipc_process_fds: control client connected
+ENABLE_SUBS_OR_CC not set, TVSYSTEM is not PAL; Not loading Subtitle / Teletext modules
+Starting STBrcd: 
+Jan  1 00:00:14.550820 I daemoniser[1033]: Spawning '/mnt/nv/STBrcd'
+Jan  1 00:00:14.588657 I mediad[923]: mediad_ipc_process_event_message: client subscription received
+Jan  1 00:00:14.588840 I mediad[923]: subs_cc_commit: Setting system: DvbttxSoftcc ( vbi: 1, soft: 0 )
+Jan  1 00:00:14.590158 I cctextd[1006]: handle_state_change_event: stream_id: -1, state: 0
+Jan  1 00:00:14.590544 I cctextd[1006]: update_video_window: VIDEO_WINDOW 0 CHANGE 0 0 720 480 [enabled 1] [suppress 0]
+Jan  1 00:00:14.703063 I STBrcd[1034]: check_platform: ident: [A140]  family: [Ax4x]
+Jan  1 00:00:14.706473 I STBrcd[1034]: update_multi_addr: Multicast address changed: was '225.10.10.10'
+Jan  1 00:00:14.707044 I STBrcd[1034]: update_multi_addr: now is '239.129.1.37'
+Jan  1 00:00:14.709064 I STBrcd[1034]: configure_network_ports: Unicast port changed (was 54321 now 22222)
+Jan  1 00:00:14.709903 E STBrcd[1034]: ami_get_interface_addr: if_name is empty'
+Jan  1 00:00:14.710375 E STBrcd[1034]: reconfigure_uni_multi_sockets: Failed to get ip address for interface ''
+Jan  1 00:00:14.711165 I STBrcd[1034]: Create Amino Generic event handler for EAS data
+Starting opera: 
+Default Opera behaviour
+Replacing /opera_home/override.ini with /mnt/nv/override.ini
+Opera startup using values from DHCP
+Opera: No NTP server defined - not waiting for time to be set
+Opera: Performing Network Check
+Jan  1 00:00:15.214532 I opera[1063]: window_pipe_init: pipe created
+commandline read: opera
+commandline read: --netcheck
+Jan  1 00:00:15.236596 I mediad[923]: mediad_ipc_process_fds: event client connected
+Jan  1 00:00:15.237474 I mediad[923]: mediad_ipc_process_fds: control client connected
+Jan  1 00:00:15.268130 I opera[1063]: Added font: /mnt/nv/AnMR.ttf
+Jan  1 00:00:15.269381 I opera[1063]: Added font: /mnt/nv/Copper.ttf
+Jan  1 00:00:15.270622 I opera[1063]: Added font: /mnt/nv/CourB.ttf
+Jan  1 00:00:15.271765 I opera[1063]: Added font: /mnt/nv/CourBI.ttf
+Jan  1 00:00:15.273029 I opera[1063]: Added font: /mnt/nv/DTVTGBC.ttf
+Jan  1 00:00:15.274221 I opera[1063]: Added font: /mnt/nv/DTVTGBCO.ttf
+Jan  1 00:00:15.275442 I opera[1063]: Added font: /mnt/nv/DomCas.ttf
+Jan  1 00:00:15.276540 I opera[1063]: Added font: /mnt/nv/DomCasI.ttf
+Jan  1 00:00:15.277788 I opera[1063]: Added font: /mnt/nv/FrutigI.ttf
+Jan  1 00:00:15.278982 I opera[1063]: Added font: /mnt/nv/FrutigMI.ttf
+Jan  1 00:00:15.280168 I opera[1063]: Added font: /mnt/nv/FrutigMR.ttf
+Jan  1 00:00:15.281399 I opera[1063]: Added font: /mnt/nv/FrutigR.ttf
+Jan  1 00:00:15.282552 I opera[1063]: Added font: /mnt/nv/KaufmB.ttf
+Jan  1 00:00:15.283698 I opera[1063]: Added font: /mnt/nv/KaufmBI.ttf
+Jan  1 00:00:15.284989 I opera[1063]: Added font: /mnt/nv/TimesEu.ttf
+Jan  1 00:00:15.286182 I opera[1063]: Added font: /mnt/nv/TimesEuI.ttf
+Jan  1 00:00:15.287752 I opera[1063]: Added font: /mnt/nv/ANS_____.ttf
+Jan  1 00:00:15.289093 I opera[1063]: Added font: /mnt/nv/CopperI.ttf
+Jan  1 00:00:15.924572 I opera[1063]: Amino JMACX Opera 11 plugin loaded
+Jan  1 00:00:15.925332 I opera[1063]: getbrowsersize: called. Got back values width=720 and height=480
+Jan  1 00:00:15.926943 I opera[1063]: getgfxsize: called. Got back values width=720 and height=480
+Jan  1 00:00:15.927763 I mediad[923]: mediad_ipc_process_fds: event client connected
+Jan  1 00:00:15.928666 I mediad[923]: mediad_ipc_process_fds: control client connected
+Jan  1 00:00:15.930061 I cctextd[1006]: update_video_window: VIDEO_WINDOW 0 CHANGE 0 0 720 480 [enabled 1] [suppress 0]
+Jan  1 00:00:15.932093 I mediad[923]: mediad_ipc_process_event_message: client subscription received
+Jan  1 00:00:15.932719 I opera[1063]: bl_browser_size_set: window size: x=0, y=0, w=720, h=480
+Jan  1 00:00:15.935979 E opera[1063]: _connect_to_available_clients: Failed to connect to /tmp/genericsock13, errno=111
+Jan  1 00:00:15.937121 I opera[1063]: _connect_to_available_clients: Connected to /tmp/genericevent13
+Jan  1 00:00:15.938    E aminodae: Amino Generic: Accept success
+Jan  1 00:00:15.938616 I opera[1063]: _connect_to_available_clients: Connected to /tmp/genericsock2
+Jan  1 00:00:15.939    E aminodae: Amino Generic: Accept event success
+Jan  1 00:00:15.940026 I opera[1063]: _connect_to_available_clients: Connected to /tmp/genericevent2
+Jan  1 00:00:15.940790 E opera[1063]: Loading policy from:/mnt/nv/policy.def ...
+Jan  1 00:00:15.941494 E opera[1063]: Custom policy loading completed
+Jan  1 00:00:16.421896 I opera[1063]: Starting Opera in Multiwindow mode with support for 4 Windows
+Jan  1 00:00:16.432608 I opera[1063]: Opera Memory allocation limits heap/alloc (60818432/50332672)
+Jan  1 00:00:16.436470 I opera[1063]: _process_registration: Listener has attached to message socket
+Jan  1 00:00:16.437247 I opera[1063]: _process_registration: Received 255 bytes, '<AMINOGENERIC>ID=13</AMINOGENERIC>'
+Jan  1 00:00:16.437827 I opera[1063]: _process_registration: About to open device client_id 13
+Jan  1 00:00:16.438702 E opera[1063]: _open_connection: Failed to connect to /tmp/genericsock13, errno=111
+Jan  1 00:00:16.439753 I opera[1063]: _open_connection: Connected to /tmp/genericevent13
+Jan  1 00:00:16.440726 I opera[1063]: Policy returned accept for:'file://localhost/mnt/nv/netman_start.html'
+Jan  1 00:00:16.723196 I opera[1063]: global_getter: NetMan object created
+2000-01-01 00:00:28 : SIGUSR1 armed
+2000-01-01 00:00:28 : Set Priority [0]
+2000-01-01 00:00:28 : agent-$Version$
+2000-01-01 00:00:28 : SIGALRM armed
+2000-01-01 00:00:28 : Amino Module added
+2000-01-01 00:00:28 : Try to read a dumped file
+2000-01-01 00:00:28 : Generic Module added
+2000-01-01 00:00:28 : Acceptor open 0
+2000-01-01 00:00:29 : RegisterHandler 0
+2000-01-01 00:00:29 : AminoPlaylist::handle_exception START
+2000-01-01 00:00:29 : AminoPlaylist::handle_exception MERGE
+2000-01-01 00:00:29 : AminoPlaylist::handle_exception MERGE_MERGED_AMINO_PLAYLIST
+2000-01-01 00:00:29 : AminoPlaylist::handle_exception MERGE_READ_FILE
+2000-01-01 00:00:29 : AminoPlaylistRecord
+2000-01-01 00:00:29 : AminoPlaylistRecord
+2000-01-01 00:00:29 : AminoPlaylistRecord
+2000-01-01 00:00:29 : AminoPlaylistRecord
+2000-01-01 00:00:29 : AminoPlaylist::handle_exception MERGE_FINISHED_AMINO_PLAYLIST
+2000-01-01 00:00:29 : AminoPlaylistRecord TimeDiff [592932571] TimeStart[1539617400] 
+2000-01-01 00:00:29 : AminoPlaylistRecord TimeDiff [658951171] TimeStart[1605636000] 
+2000-01-01 00:00:29 : AminoPlaylistRecord TimeDiff [659465971] TimeStart[1606150800] 
+2000-01-01 00:00:29 : AminoPlaylistRecord TimeDiff [659469571] TimeStart[1606154400] 
+2000-01-01 00:00:29 : 
+2000-01-01 00:00:29 : Register AminoSchedule [592932571]
+No running network to test automatic DI
+
+Please press Enter to activate this console. 2000-01-01 00:00:39 : AminoPlaylistHandleTimeout
