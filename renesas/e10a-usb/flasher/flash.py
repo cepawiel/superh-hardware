@@ -66,8 +66,8 @@ class E10AFlasher:
 
     def rx_expect(self, expect: bytearray):
         read = self.rx(len(expect))
-        if expect == read:
-            raise ValueError("Expected {}, Got {}", expect, read)
+        if list(read) != list(expect):
+            raise ValueError("Expected {}, Got {}".format(expect, list(read)))
         
     def append_checksum(self, packet: bytearray):
         checksum = 0x100 - (sum(packet) & 0xFF)
