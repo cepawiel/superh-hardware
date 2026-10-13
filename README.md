@@ -29,7 +29,7 @@ This is my collection of SuperH hardware!
 | Konami | [KV2](konami/kv2/README.md) | SH7751R @ ? | ? | ? | ? | Visible Untested | GPU: SiS 315 |
 | Hitachi | [HPW-600ET](hpw-600et/README.md) | SH7750V @ 128MHz | 32MB SDRAM | ? | 1x Modem | Not Visible | Tablet w/ Touchscreen, WinCE  |
 | Johnson Controls | [MS-NCM4510-2](ms-ncm4510-2/README.md) | SH7760 @ ? | 128MB | 128MB | 1x LAN91C111-NS | Visible Untested | UART Controller |
-| Infomir | [MAG250](mag250/README.md) | STi7105-BUD @ ? | ? DDR? | ? | 1x ? | Yes (Maybe Locked?) | HDMI & USB |
+| Infomir | [MAG250](mag250/README.md) | STi7105-BUD @ ? | 256MB DDR2 | ? | 1x ? | Yes (Maybe Locked?) | HDMI & USB |
 | Sega | Atomiswave | SH7091 @ ~200MHz | | | | | |
 | Sega | Dreamcast VA0 | SH7091 @ ~200MHz | 16MB SDRAM | | | Not Visible | |
 | Sega | Dreamcast VA1 | SH7091 @ ~200MHz | 16MB SDRAM | | | Not Visible | |
